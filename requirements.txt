@@ -1,2 +1,8 @@
 fastapi
-uvicorn[standard]
+uvicorn
+pandas
+flask
+joblib
+scikit-learn
+fastapi
+
