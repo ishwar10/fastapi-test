@@ -43,3 +43,6 @@ async def predict(file: UploadFile = File(...)):
         return {"predictions": predictions_list}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8080))  # Default to 8080 for local testing
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
